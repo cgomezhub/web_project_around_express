@@ -18,18 +18,19 @@ router.get('/users', (req, res) => {
 
 router.get('/users/:id', (req, res) => {
   const userId = req.params.id;
-  fs.readFile(path.join('data', 'users.json'), 'utf8', (err, data) => {    if (err) {
-    console.error(err);
-    res.status(500).send('An error has ocurred on the server');
-  } else {
-    const users = JSON.parse(data);
-    const user = users.find(u => u._id === userId);
-    if (user) {
-      res.send(user);
+  fs.readFile(path.join('data', 'users.json'), 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      res.status(500).send('An error has ocurred on the server');
     } else {
-      res.status(404).send({ message: 'User ID not found' });
+      const users = JSON.parse(data);
+      const user = users.find((u) => u._id === userId);
+      if (user) {
+        res.send(user);
+      } else {
+        res.status(404).send({ message: 'User ID not found' });
+      }
     }
-  }
   });
 });
 
