@@ -1,7 +1,7 @@
 {
   "name": "web_project_around_express",
   "version": "1.0.0",
-  "description": "",
+  "description": "- Autor\r - Introduccion\r - Tecnologias Utilizadas\r - Imágenes\r - Enlace web - Github page",
   "main": "app.js",
   "scripts": {
     "lint": "npx eslint .",

@@ -1,8 +1,9 @@
 const { Router } = require('express');
 
+const fs = require('fs');
+
 const router = Router();
 
-const fs = require('fs');
 const path = require('path');
 
 router.get('/users', (req, res) => {
