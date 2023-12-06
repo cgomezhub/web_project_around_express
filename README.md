@@ -38,11 +38,6 @@ Este es un proyecto se pone nuevamente en practica la teoria de modulos de Node.
 
 
 
-**Videos**
-
-![code](./media/video/code.mp4).
-![googe-chrome](./media/video/localhost-Google-Chrome.mp4).
-![postman](./media/video/postman-demo.mp4).
 
 
 

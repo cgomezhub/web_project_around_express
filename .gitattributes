@@ -1,3 +1,0 @@
-code.mp4 filter=lfs diff=lfs merge=lfs -text
-localhost-Google-Chrome.mp4 filter=lfs diff=lfs merge=lfs -text
-postman-demo.mp4 filter=lfs diff=lfs merge=lfs -text
