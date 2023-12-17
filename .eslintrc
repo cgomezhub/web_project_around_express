@@ -3,6 +3,7 @@
   "plugins": ["import"],
   "rules": {
     "no-underscore-dangle": ["error", { "allow": ["_id"] }],
-    "no-console": "off"
+    "no-console": "off",
+    "comma-dangle": "off"
   }
 }
