@@ -14,6 +14,16 @@ const { PORT = 3000 } = process.env;
 
 const app = express();
 
+app.use(express.json());
+
+app.use((req, res, next) => {
+  req.user = {
+    _id: '657f509c04765e4d0e310eab',
+  };
+
+  next();
+});
+
 const userRoutes = require('./routes/users');
 
 const cardRoutes = require('./routes/cards');
