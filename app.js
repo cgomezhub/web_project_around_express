@@ -29,8 +29,6 @@ const userRoutes = require('./routes/users');
 const cardRoutes = require('./routes/cards');
 
 app.use(userRoutes);
-
-app.use(userRoutes);
 app.use(cardRoutes);
 
 app.use('*', (req, res) => {
