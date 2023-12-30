@@ -39,6 +39,10 @@ finalmente Se prueba la aplicacion aplicando rutas como http://localhost:3000/us
 
 **Imágenes**
 
-![googe-chrome](./media/screenshots/Screenshot_URL.png).
+![google-chrome](./media/screenshots/Screenshot_URL.png).
 
 ![Postman](./media/screenshots/Screenshot_Postman.png).
+
+![MongoDB](./media/screenshots/Screenshot_MOngoDB.png).
+
+![Postman_likes](./media/screenshots/Screenshot_Postman_likes.png).
