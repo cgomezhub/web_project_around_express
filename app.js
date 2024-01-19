@@ -10,7 +10,8 @@ mongoose
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('Failed to connect to MongoDB', err));
 
-const { PORT = 3000 } = process.env;
+const IP = '34.16.169.189';
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -35,6 +36,6 @@ app.use('*', (req, res) => {
   res.status(404).send({ message: 'Requested resource not found' });
 });
 
-app.listen(PORT, () => {
-  console.log(`App listening at port ${PORT}`);
+app.listen(PORT, IP, () => {
+  console.log(`Server is running at http://${IP}:${PORT}`);
 });
